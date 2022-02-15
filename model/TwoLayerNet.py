@@ -19,3 +19,9 @@ class TwoLayerNet(torch.nn.Module):
         h_relu = self.linear1(x).clamp(min=0)
         y_pred = self.linear2(h_relu)
         return y_pred
+
+if __name__ == '__main___':
+    x = torch.tensor()
+    model = xxNet()
+    y = model(y)
+    print(y.shape)
