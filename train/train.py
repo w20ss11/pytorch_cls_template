@@ -30,3 +30,11 @@ for t in range(500):
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
+
+def main():
+    args = parser.parse_args()
+    args.nprocs = torch.cuda.device_count()
+    main_worker(args.local_rank, args.nprocs, args)
+    
+if __name__ == '__main__':
+        main()
