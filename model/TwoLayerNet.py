@@ -22,6 +22,6 @@ class TwoLayerNet(torch.nn.Module):
 
 if __name__ == '__main___':
     x = torch.tensor()
-    model = xxNet()
-    y = model(y)
+    model = TwoLayerNet()
+    y = model(x)
     print(y.shape)
