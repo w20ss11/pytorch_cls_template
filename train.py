@@ -10,6 +10,8 @@ from torch.utils.data import DataLoader
 from torch import nn
 
 from dataset.CustomDataset import CustomDataset
+from utils.log import get_logger
+from utils.AverageMeter import AverageMeter
 
 ############################ PARAMS ################################################################
 parser = argparse.ArgumentParser(description='params')
@@ -29,6 +31,8 @@ config_path = "./config.json"
 fp_json = open(config_path, "r", encoding="utf-8")
 json_content = json.load(fp_json)
 date_str = datetime.now().strftime(r'%m%d_%H%M%S')
+log_path = os.path.join(args.save_path, date_str, "log.txt")
+logger = get_logger(log_path)
 
 ############################ SEED ################################################################
 SEED = 123
@@ -70,7 +74,11 @@ if max_epoch != -1:
     start_epoch = epoch + 1
 
 ############################ TRAIN ################################################################
-losses = []
+logger.info('start training!')
+losses = AverageMeter("loss")
+accuracy = AverageMeter("accu")
+correct = 0
+total = 0
 for epoch in range(start_epoch, args.epoch+1): #epoch 从1开始 loss不一致
     for i, (images, labels) in enumerate(train_loader):
         images = images.float().to(DEVICE)
@@ -78,15 +86,18 @@ for epoch in range(start_epoch, args.epoch+1): #epoch 从1开始 loss不一致
         #清零
         optimizer.zero_grad()
         outputs = model(images)
+        _, predicted = torch.max(outputs.cpu().data, 1)
+        total += labels.size(0)
+        correct += (predicted == labels).sum()
+        accuracy.update(100 * correct / total)
         #计算损失函数
         loss = criterion(outputs, labels)
         loss.backward()
         optimizer.step()
-        losses.append(loss.cpu().data.item())
+        losses.update(loss.cpu().data.item())
         # todo accu
         if (i+1) % 2 == 0:
-            # todo logger
-            print ('TRAIN Epoch : %d/%d, Iter : %d/%d,  Loss: %.4f'%(epoch, args.epoch, i+1, len(train_dataset)//args.batch_size, loss.data.item()))
+            logger.info('Epoch:%d/%d, Iter:%d/%d, Loss:%.4f'%(epoch, args.epoch, i+1, len(train_dataset)//args.batch_size, losses.avg))
         if epoch % args.save_freq == 0:
             model_path = os.path.join(args.save_path, "model_epoch_{}.pth".format(epoch))
             state = {'model': model.state_dict(), 'optimizer': optimizer.state_dict(), 'epoch': epoch}
@@ -98,7 +109,7 @@ for epoch in range(start_epoch, args.epoch+1): #epoch 从1开始 loss不一致
             labels = labels.to(DEVICE)
             outputs = model(images)
             if (i+1) % 2 == 0:
-                print ('TEST Epoch : %d/%d, Iter : %d/%d'%(epoch, args.epoch, i+1, len(test_dataset)//args.batch_size))
+                logger.info('Epoch:%d/%d, Iter:%d/%d'%(epoch, args.epoch, i+1, len(test_dataset)//args.batch_size))
 
 # if __name__ == '__main__':
 #     main()
