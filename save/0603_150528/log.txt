@@ -1,0 +1,25 @@
+[2022-06-03 15:05:29,473][train.py][line:104][INFO] start training!
+[2022-06-03 15:05:37,037][train.py][line:124][INFO] Epoch:1/10, Iter:2/4, Loss:0.6959, lr:0.0000
+[2022-06-03 15:05:40,955][train.py][line:124][INFO] Epoch:1/10, Iter:4/4, Loss:0.6827, lr:0.0000
+[2022-06-03 15:05:43,457][train.py][line:124][INFO] Epoch:2/10, Iter:2/4, Loss:0.6921, lr:0.0000
+[2022-06-03 15:05:45,866][train.py][line:124][INFO] Epoch:2/10, Iter:4/4, Loss:0.6907, lr:0.0000
+[2022-06-03 15:05:47,838][train.py][line:124][INFO] Epoch:3/10, Iter:2/4, Loss:0.6854, lr:0.0000
+[2022-06-03 15:05:49,757][train.py][line:124][INFO] Epoch:3/10, Iter:4/4, Loss:0.6860, lr:0.0000
+[2022-06-03 15:05:51,393][train.py][line:124][INFO] Epoch:4/10, Iter:2/4, Loss:0.6881, lr:0.0000
+[2022-06-03 15:05:53,229][train.py][line:124][INFO] Epoch:4/10, Iter:4/4, Loss:0.6869, lr:0.0000
+[2022-06-03 15:05:57,064][train.py][line:124][INFO] Epoch:5/10, Iter:2/4, Loss:0.6873, lr:0.0000
+[2022-06-03 15:06:02,715][train.py][line:124][INFO] Epoch:5/10, Iter:4/4, Loss:0.6887, lr:0.0000
+[2022-06-03 15:06:04,812][train.py][line:137][INFO] Epoch:5/10, Iter:2/4
+[2022-06-03 15:06:05,584][train.py][line:137][INFO] Epoch:5/10, Iter:4/4
+[2022-06-03 15:06:07,777][train.py][line:124][INFO] Epoch:6/10, Iter:2/4, Loss:0.6902, lr:0.0000
+[2022-06-03 15:06:10,008][train.py][line:124][INFO] Epoch:6/10, Iter:4/4, Loss:0.6923, lr:0.0000
+[2022-06-03 15:06:12,211][train.py][line:124][INFO] Epoch:7/10, Iter:2/4, Loss:0.6928, lr:0.0000
+[2022-06-03 15:06:14,919][train.py][line:124][INFO] Epoch:7/10, Iter:4/4, Loss:0.6951, lr:0.0000
+[2022-06-03 15:06:17,218][train.py][line:124][INFO] Epoch:8/10, Iter:2/4, Loss:0.6955, lr:0.0000
+[2022-06-03 15:06:19,538][train.py][line:124][INFO] Epoch:8/10, Iter:4/4, Loss:0.6957, lr:0.0000
+[2022-06-03 15:06:22,033][train.py][line:124][INFO] Epoch:9/10, Iter:2/4, Loss:0.6953, lr:0.0000
+[2022-06-03 15:06:24,562][train.py][line:124][INFO] Epoch:9/10, Iter:4/4, Loss:0.6950, lr:0.0000
+[2022-06-03 15:06:29,493][train.py][line:124][INFO] Epoch:10/10, Iter:2/4, Loss:0.6949, lr:0.0000
+[2022-06-03 15:06:35,744][train.py][line:124][INFO] Epoch:10/10, Iter:4/4, Loss:0.6945, lr:0.0000
+[2022-06-03 15:06:37,441][train.py][line:137][INFO] Epoch:10/10, Iter:2/4
+[2022-06-03 15:06:37,866][train.py][line:137][INFO] Epoch:10/10, Iter:4/4
