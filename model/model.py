@@ -3,21 +3,19 @@ import torch.nn as nn
 import torchvision.models as models
 
 class ModelNet(nn.Module):
-    def __init__(self, num_class, criterion):
+    def __init__(self, num_class):
         super(ModelNet, self).__init__()
         # todo feature
         self.model = models.resnet18(pretrained=False)
+        self.model.load_state_dict(torch.load('data/resnet18-5c106cde.pth'))
+        # self.model = models.resnet50(pretrained=False)
         num_ftrs = self.model.fc.in_features
         self.model.fc = nn.Linear(num_ftrs, num_class)
-        self.criterion = criterion
 
-    def forward(self, x, gt=None):
+    def forward(self, x):
         output = self.model(x)
-        output = torch.softmax(output, dim=0)
-        loss = None
-        if not gt is None:
-            loss = self.criterion(output, gt)
-        return output, loss
+        # output = torch.softmax(output, dim=0)
+        return output
 
 if __name__ == '__main___':
     x = torch.randn(1, 3, 32, 32)
