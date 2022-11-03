@@ -1,0 +1,151 @@
+[2022-10-29 13:52:29,965][train.py][line:107][INFO] start training!
+[2022-10-29 13:52:41,590][train.py][line:129][INFO] Epoch:1/10, Iter:2/188, Loss:1.7575, Accuracy:26.5625, lr:0.0001000000
+[2022-10-29 13:52:51,350][train.py][line:129][INFO] Epoch:1/10, Iter:4/188, Loss:1.6386, Accuracy:29.2969, lr:0.0001000000
+[2022-10-29 13:53:00,894][train.py][line:129][INFO] Epoch:1/10, Iter:6/188, Loss:1.4849, Accuracy:32.3438, lr:0.0001000000
+[2022-10-29 13:53:12,709][train.py][line:129][INFO] Epoch:1/10, Iter:8/188, Loss:1.4461, Accuracy:34.7628, lr:0.0001000000
+[2022-10-29 13:53:23,574][train.py][line:129][INFO] Epoch:1/10, Iter:10/188, Loss:1.3568, Accuracy:36.9422, lr:0.0001000000
+[2022-10-29 13:53:38,631][train.py][line:129][INFO] Epoch:1/10, Iter:12/188, Loss:1.2918, Accuracy:38.8897, lr:0.0001000000
+[2022-10-29 13:53:52,300][train.py][line:129][INFO] Epoch:1/10, Iter:14/188, Loss:1.2216, Accuracy:40.6706, lr:0.0001000000
+[2022-10-29 13:54:05,994][train.py][line:129][INFO] Epoch:1/10, Iter:16/188, Loss:1.1705, Accuracy:42.3902, lr:0.0001000000
+[2022-10-29 13:54:19,782][train.py][line:129][INFO] Epoch:1/10, Iter:18/188, Loss:1.1123, Accuracy:44.0470, lr:0.0001000000
+[2022-10-29 13:54:33,569][train.py][line:129][INFO] Epoch:1/10, Iter:20/188, Loss:1.0446, Accuracy:45.6662, lr:0.0001000000
+[2022-10-29 13:54:47,539][train.py][line:129][INFO] Epoch:1/10, Iter:22/188, Loss:1.0203, Accuracy:47.1037, lr:0.0001000000
+[2022-10-29 13:54:58,503][train.py][line:129][INFO] Epoch:1/10, Iter:24/188, Loss:0.9877, Accuracy:48.3867, lr:0.0001000000
+[2022-10-29 13:55:09,680][train.py][line:129][INFO] Epoch:1/10, Iter:26/188, Loss:0.9337, Accuracy:49.5940, lr:0.0001000000
+[2022-10-29 13:55:20,917][train.py][line:129][INFO] Epoch:1/10, Iter:28/188, Loss:0.8975, Accuracy:50.7668, lr:0.0001000000
+[2022-10-29 13:55:31,971][train.py][line:129][INFO] Epoch:1/10, Iter:30/188, Loss:0.8645, Accuracy:51.8946, lr:0.0001000000
+[2022-10-29 13:55:43,291][train.py][line:129][INFO] Epoch:1/10, Iter:32/188, Loss:0.8341, Accuracy:52.9727, lr:0.0001000000
+[2022-10-29 13:55:54,334][train.py][line:129][INFO] Epoch:1/10, Iter:34/188, Loss:0.8090, Accuracy:53.9884, lr:0.0001000000
+[2022-10-29 13:56:05,686][train.py][line:129][INFO] Epoch:1/10, Iter:36/188, Loss:0.8027, Accuracy:54.9259, lr:0.0001000000
+[2022-10-29 13:56:17,032][train.py][line:129][INFO] Epoch:1/10, Iter:38/188, Loss:0.7840, Accuracy:55.8024, lr:0.0001000000
+[2022-10-29 13:56:28,158][train.py][line:129][INFO] Epoch:1/10, Iter:40/188, Loss:0.7659, Accuracy:56.6357, lr:0.0001000000
+[2022-10-29 13:56:40,876][train.py][line:129][INFO] Epoch:1/10, Iter:42/188, Loss:0.7628, Accuracy:57.3953, lr:0.0001000000
+[2022-10-29 13:56:53,603][train.py][line:129][INFO] Epoch:1/10, Iter:44/188, Loss:0.7476, Accuracy:58.1204, lr:0.0001000000
+[2022-10-29 13:57:06,149][train.py][line:129][INFO] Epoch:1/10, Iter:46/188, Loss:0.7395, Accuracy:58.8005, lr:0.0001000000
+[2022-10-29 13:57:19,742][train.py][line:129][INFO] Epoch:1/10, Iter:48/188, Loss:0.7325, Accuracy:59.4151, lr:0.0001000000
+[2022-10-29 13:57:33,282][train.py][line:129][INFO] Epoch:1/10, Iter:50/188, Loss:0.7168, Accuracy:60.0056, lr:0.0001000000
+[2022-10-29 13:57:46,422][train.py][line:129][INFO] Epoch:1/10, Iter:52/188, Loss:0.6992, Accuracy:60.5752, lr:0.0001000000
+[2022-10-29 13:57:57,461][train.py][line:129][INFO] Epoch:1/10, Iter:54/188, Loss:0.6836, Accuracy:61.1311, lr:0.0001000000
+[2022-10-29 13:58:09,935][train.py][line:129][INFO] Epoch:1/10, Iter:56/188, Loss:0.6770, Accuracy:61.6565, lr:0.0001000000
+[2022-10-29 13:58:21,010][train.py][line:129][INFO] Epoch:1/10, Iter:58/188, Loss:0.6664, Accuracy:62.1578, lr:0.0001000000
+[2022-10-29 13:58:34,454][train.py][line:129][INFO] Epoch:1/10, Iter:60/188, Loss:0.6627, Accuracy:62.6384, lr:0.0001000000
+[2022-10-29 13:58:48,352][train.py][line:129][INFO] Epoch:1/10, Iter:62/188, Loss:0.6521, Accuracy:63.0962, lr:0.0001000000
+[2022-10-29 13:59:01,545][train.py][line:129][INFO] Epoch:1/10, Iter:64/188, Loss:0.6423, Accuracy:63.5389, lr:0.0001000000
+[2022-10-29 13:59:15,501][train.py][line:129][INFO] Epoch:1/10, Iter:66/188, Loss:0.6331, Accuracy:63.9599, lr:0.0001000000
+[2022-10-29 13:59:29,135][train.py][line:129][INFO] Epoch:1/10, Iter:68/188, Loss:0.6213, Accuracy:64.3704, lr:0.0001000000
+[2022-10-29 13:59:42,927][train.py][line:129][INFO] Epoch:1/10, Iter:70/188, Loss:0.6117, Accuracy:64.7717, lr:0.0001000000
+[2022-10-29 13:59:56,368][train.py][line:129][INFO] Epoch:1/10, Iter:72/188, Loss:0.6103, Accuracy:65.1530, lr:0.0001000000
+[2022-10-29 14:00:10,129][train.py][line:129][INFO] Epoch:1/10, Iter:74/188, Loss:0.6032, Accuracy:65.5202, lr:0.0001000000
+[2022-10-29 14:00:23,807][train.py][line:129][INFO] Epoch:1/10, Iter:76/188, Loss:0.5944, Accuracy:65.8764, lr:0.0001000000
+[2022-10-29 14:00:37,387][train.py][line:129][INFO] Epoch:1/10, Iter:78/188, Loss:0.5841, Accuracy:66.2230, lr:0.0001000000
+[2022-10-29 14:00:51,485][train.py][line:129][INFO] Epoch:1/10, Iter:80/188, Loss:0.5793, Accuracy:66.5594, lr:0.0001000000
+[2022-10-29 14:01:05,063][train.py][line:129][INFO] Epoch:1/10, Iter:82/188, Loss:0.5744, Accuracy:66.8812, lr:0.0001000000
+[2022-10-29 14:01:19,012][train.py][line:129][INFO] Epoch:1/10, Iter:84/188, Loss:0.5707, Accuracy:67.1912, lr:0.0001000000
+[2022-10-29 14:01:31,695][train.py][line:129][INFO] Epoch:1/10, Iter:86/188, Loss:0.5699, Accuracy:67.4884, lr:0.0001000000
+[2022-10-29 14:01:44,486][train.py][line:129][INFO] Epoch:1/10, Iter:88/188, Loss:0.5641, Accuracy:67.7768, lr:0.0001000000
+[2022-10-29 14:01:58,255][train.py][line:129][INFO] Epoch:1/10, Iter:90/188, Loss:0.5649, Accuracy:68.0545, lr:0.0001000000
+[2022-10-29 14:02:11,626][train.py][line:129][INFO] Epoch:1/10, Iter:92/188, Loss:0.5672, Accuracy:68.3191, lr:0.0001000000
+[2022-10-29 14:02:25,297][train.py][line:129][INFO] Epoch:1/10, Iter:94/188, Loss:0.5680, Accuracy:68.5729, lr:0.0001000000
+[2022-10-29 14:02:39,015][train.py][line:129][INFO] Epoch:1/10, Iter:96/188, Loss:0.5607, Accuracy:68.8220, lr:0.0001000000
+[2022-10-29 14:02:52,791][train.py][line:129][INFO] Epoch:1/10, Iter:98/188, Loss:0.5600, Accuracy:69.0652, lr:0.0001000000
+[2022-10-29 14:03:04,645][train.py][line:129][INFO] Epoch:1/10, Iter:100/188, Loss:0.5571, Accuracy:69.3013, lr:0.0001000000
+[2022-10-29 14:03:15,646][train.py][line:129][INFO] Epoch:1/10, Iter:102/188, Loss:0.5541, Accuracy:69.5296, lr:0.0001000000
+[2022-10-29 14:03:26,504][train.py][line:129][INFO] Epoch:1/10, Iter:104/188, Loss:0.5477, Accuracy:69.7538, lr:0.0001000000
+[2022-10-29 14:03:38,251][train.py][line:129][INFO] Epoch:1/10, Iter:106/188, Loss:0.5422, Accuracy:69.9735, lr:0.0001000000
+[2022-10-29 14:03:49,391][train.py][line:129][INFO] Epoch:1/10, Iter:108/188, Loss:0.5419, Accuracy:70.1823, lr:0.0001000000
+[2022-10-29 14:04:03,420][train.py][line:129][INFO] Epoch:1/10, Iter:110/188, Loss:0.5382, Accuracy:70.3856, lr:0.0001000000
+[2022-10-29 14:04:17,247][train.py][line:129][INFO] Epoch:1/10, Iter:112/188, Loss:0.5366, Accuracy:70.5826, lr:0.0001000000
+[2022-10-29 14:04:30,952][train.py][line:129][INFO] Epoch:1/10, Iter:114/188, Loss:0.5359, Accuracy:70.7732, lr:0.0001000000
+[2022-10-29 14:04:43,026][train.py][line:129][INFO] Epoch:1/10, Iter:116/188, Loss:0.5363, Accuracy:70.9571, lr:0.0001000000
+[2022-10-29 14:04:56,890][train.py][line:129][INFO] Epoch:1/10, Iter:118/188, Loss:0.5323, Accuracy:71.1356, lr:0.0001000000
+[2022-10-29 14:05:08,272][train.py][line:129][INFO] Epoch:1/10, Iter:120/188, Loss:0.5334, Accuracy:71.3094, lr:0.0001000000
+[2022-10-29 14:05:21,007][train.py][line:129][INFO] Epoch:1/10, Iter:122/188, Loss:0.5287, Accuracy:71.4787, lr:0.0001000000
+[2022-10-29 14:05:33,660][train.py][line:129][INFO] Epoch:1/10, Iter:124/188, Loss:0.5275, Accuracy:71.6452, lr:0.0001000000
+[2022-10-29 14:05:46,943][train.py][line:129][INFO] Epoch:1/10, Iter:126/188, Loss:0.5262, Accuracy:71.8064, lr:0.0001000000
+[2022-10-29 14:06:00,823][train.py][line:129][INFO] Epoch:1/10, Iter:128/188, Loss:0.5279, Accuracy:71.9604, lr:0.0001000000
+[2022-10-29 14:06:13,475][train.py][line:129][INFO] Epoch:1/10, Iter:130/188, Loss:0.5239, Accuracy:72.1108, lr:0.0001000000
+[2022-10-29 14:06:26,223][train.py][line:129][INFO] Epoch:1/10, Iter:132/188, Loss:0.5230, Accuracy:72.2579, lr:0.0001000000
+[2022-10-29 14:06:37,453][train.py][line:129][INFO] Epoch:1/10, Iter:134/188, Loss:0.5225, Accuracy:72.4001, lr:0.0001000000
+[2022-10-29 14:06:50,187][train.py][line:129][INFO] Epoch:1/10, Iter:136/188, Loss:0.5191, Accuracy:72.5395, lr:0.0001000000
+[2022-10-29 14:07:01,470][train.py][line:129][INFO] Epoch:1/10, Iter:138/188, Loss:0.5149, Accuracy:72.6762, lr:0.0001000000
+[2022-10-29 14:07:12,620][train.py][line:129][INFO] Epoch:1/10, Iter:140/188, Loss:0.5116, Accuracy:72.8102, lr:0.0001000000
+[2022-10-29 14:07:23,852][train.py][line:129][INFO] Epoch:1/10, Iter:142/188, Loss:0.5063, Accuracy:72.9434, lr:0.0001000000
+[2022-10-29 14:07:37,658][train.py][line:129][INFO] Epoch:1/10, Iter:144/188, Loss:0.5035, Accuracy:73.0745, lr:0.0001000000
+[2022-10-29 14:07:50,170][train.py][line:129][INFO] Epoch:1/10, Iter:146/188, Loss:0.5000, Accuracy:73.2033, lr:0.0001000000
+[2022-10-29 14:08:01,307][train.py][line:129][INFO] Epoch:1/10, Iter:148/188, Loss:0.4991, Accuracy:73.3298, lr:0.0001000000
+[2022-10-29 14:08:12,411][train.py][line:129][INFO] Epoch:1/10, Iter:150/188, Loss:0.4974, Accuracy:73.4538, lr:0.0001000000
+[2022-10-29 14:08:23,633][train.py][line:129][INFO] Epoch:1/10, Iter:152/188, Loss:0.4942, Accuracy:73.5751, lr:0.0001000000
+[2022-10-29 14:08:35,040][train.py][line:129][INFO] Epoch:1/10, Iter:154/188, Loss:0.4914, Accuracy:73.6940, lr:0.0001000000
+[2022-10-29 14:08:46,400][train.py][line:129][INFO] Epoch:1/10, Iter:156/188, Loss:0.4901, Accuracy:73.8105, lr:0.0001000000
+[2022-10-29 14:08:58,060][train.py][line:129][INFO] Epoch:1/10, Iter:158/188, Loss:0.4873, Accuracy:73.9258, lr:0.0001000000
+[2022-10-29 14:09:10,832][train.py][line:129][INFO] Epoch:1/10, Iter:160/188, Loss:0.4832, Accuracy:74.0394, lr:0.0001000000
+[2022-10-29 14:09:23,471][train.py][line:129][INFO] Epoch:1/10, Iter:162/188, Loss:0.4836, Accuracy:74.1508, lr:0.0001000000
+[2022-10-29 14:09:37,570][train.py][line:129][INFO] Epoch:1/10, Iter:164/188, Loss:0.4814, Accuracy:74.2602, lr:0.0001000000
+[2022-10-29 14:09:50,187][train.py][line:129][INFO] Epoch:1/10, Iter:166/188, Loss:0.4798, Accuracy:74.3674, lr:0.0001000000
+[2022-10-29 14:10:01,507][train.py][line:129][INFO] Epoch:1/10, Iter:168/188, Loss:0.4764, Accuracy:74.4722, lr:0.0001000000
+[2022-10-29 14:10:15,845][train.py][line:129][INFO] Epoch:1/10, Iter:170/188, Loss:0.4780, Accuracy:74.5750, lr:0.0001000000
+[2022-10-29 14:10:29,338][train.py][line:129][INFO] Epoch:1/10, Iter:172/188, Loss:0.4778, Accuracy:74.6763, lr:0.0001000000
+[2022-10-29 14:10:43,252][train.py][line:129][INFO] Epoch:1/10, Iter:174/188, Loss:0.4748, Accuracy:74.7759, lr:0.0001000000
+[2022-10-29 14:10:54,402][train.py][line:129][INFO] Epoch:1/10, Iter:176/188, Loss:0.4731, Accuracy:74.8739, lr:0.0001000000
+[2022-10-29 14:11:07,079][train.py][line:129][INFO] Epoch:1/10, Iter:178/188, Loss:0.4724, Accuracy:74.9705, lr:0.0001000000
+[2022-10-29 14:11:19,852][train.py][line:129][INFO] Epoch:1/10, Iter:180/188, Loss:0.4687, Accuracy:75.0664, lr:0.0001000000
+[2022-10-29 14:11:33,638][train.py][line:129][INFO] Epoch:1/10, Iter:182/188, Loss:0.4653, Accuracy:75.1614, lr:0.0001000000
+[2022-10-29 14:11:45,023][train.py][line:129][INFO] Epoch:1/10, Iter:184/188, Loss:0.4627, Accuracy:75.2554, lr:0.0001000000
+[2022-10-29 14:11:57,801][train.py][line:129][INFO] Epoch:1/10, Iter:186/188, Loss:0.4609, Accuracy:75.3484, lr:0.0001000000
+[2022-10-29 14:12:10,369][train.py][line:129][INFO] Epoch:1/10, Iter:188/188, Loss:0.4603, Accuracy:75.4396, lr:0.0001000000
+[2022-10-29 14:12:19,866][train.py][line:143][INFO] Epoch:1/10, Iter:2/81
+[2022-10-29 14:12:25,247][train.py][line:143][INFO] Epoch:1/10, Iter:4/81
+[2022-10-29 14:12:29,911][train.py][line:143][INFO] Epoch:1/10, Iter:6/81
+[2022-10-29 14:12:34,527][train.py][line:143][INFO] Epoch:1/10, Iter:8/81
+[2022-10-29 14:12:39,033][train.py][line:143][INFO] Epoch:1/10, Iter:10/81
+[2022-10-29 14:12:43,747][train.py][line:143][INFO] Epoch:1/10, Iter:12/81
+[2022-10-29 14:12:48,347][train.py][line:143][INFO] Epoch:1/10, Iter:14/81
+[2022-10-29 14:12:52,949][train.py][line:143][INFO] Epoch:1/10, Iter:16/81
+[2022-10-29 14:12:57,378][train.py][line:143][INFO] Epoch:1/10, Iter:18/81
+[2022-10-29 14:13:02,687][train.py][line:143][INFO] Epoch:1/10, Iter:20/81
+[2022-10-29 14:13:07,287][train.py][line:143][INFO] Epoch:1/10, Iter:22/81
+[2022-10-29 14:13:11,600][train.py][line:143][INFO] Epoch:1/10, Iter:24/81
+[2022-10-29 14:13:15,950][train.py][line:143][INFO] Epoch:1/10, Iter:26/81
+[2022-10-29 14:13:20,572][train.py][line:143][INFO] Epoch:1/10, Iter:28/81
+[2022-10-29 14:13:25,181][train.py][line:143][INFO] Epoch:1/10, Iter:30/81
+[2022-10-29 14:13:29,670][train.py][line:143][INFO] Epoch:1/10, Iter:32/81
+[2022-10-29 14:13:34,021][train.py][line:143][INFO] Epoch:1/10, Iter:34/81
+[2022-10-29 14:13:38,441][train.py][line:143][INFO] Epoch:1/10, Iter:36/81
+[2022-10-29 14:13:43,035][train.py][line:143][INFO] Epoch:1/10, Iter:38/81
+[2022-10-29 14:13:47,208][train.py][line:143][INFO] Epoch:1/10, Iter:40/81
+[2022-10-29 14:13:51,687][train.py][line:143][INFO] Epoch:1/10, Iter:42/81
+[2022-10-29 14:13:56,350][train.py][line:143][INFO] Epoch:1/10, Iter:44/81
+[2022-10-29 14:14:00,634][train.py][line:143][INFO] Epoch:1/10, Iter:46/81
+[2022-10-29 14:14:05,125][train.py][line:143][INFO] Epoch:1/10, Iter:48/81
+[2022-10-29 14:14:11,352][train.py][line:143][INFO] Epoch:1/10, Iter:50/81
+[2022-10-29 14:14:17,007][train.py][line:143][INFO] Epoch:1/10, Iter:52/81
+[2022-10-29 14:14:21,903][train.py][line:143][INFO] Epoch:1/10, Iter:54/81
+[2022-10-29 14:14:26,812][train.py][line:143][INFO] Epoch:1/10, Iter:56/81
+[2022-10-29 14:14:31,709][train.py][line:143][INFO] Epoch:1/10, Iter:58/81
+[2022-10-29 14:14:36,637][train.py][line:143][INFO] Epoch:1/10, Iter:60/81
+[2022-10-29 14:14:41,525][train.py][line:143][INFO] Epoch:1/10, Iter:62/81
+[2022-10-29 14:14:46,369][train.py][line:143][INFO] Epoch:1/10, Iter:64/81
+[2022-10-29 14:14:50,991][train.py][line:143][INFO] Epoch:1/10, Iter:66/81
+[2022-10-29 14:14:55,723][train.py][line:143][INFO] Epoch:1/10, Iter:68/81
+[2022-10-29 14:15:00,492][train.py][line:143][INFO] Epoch:1/10, Iter:70/81
+[2022-10-29 14:15:05,198][train.py][line:143][INFO] Epoch:1/10, Iter:72/81
+[2022-10-29 14:15:09,635][train.py][line:143][INFO] Epoch:1/10, Iter:74/81
+[2022-10-29 14:15:14,195][train.py][line:143][INFO] Epoch:1/10, Iter:76/81
+[2022-10-29 14:15:19,025][train.py][line:143][INFO] Epoch:1/10, Iter:78/81
+[2022-10-29 14:15:23,593][train.py][line:143][INFO] Epoch:1/10, Iter:80/81
+[2022-10-29 14:15:26,371][train.py][line:143][INFO] Epoch:1/10, Iter:82/81
+[2022-10-29 14:15:41,187][train.py][line:129][INFO] Epoch:2/10, Iter:2/188, Loss:0.4557, Accuracy:75.5738, lr:0.0001000000
+[2022-10-29 14:15:57,053][train.py][line:129][INFO] Epoch:2/10, Iter:4/188, Loss:0.4522, Accuracy:75.6625, lr:0.0001000000
+[2022-10-29 14:16:11,398][train.py][line:129][INFO] Epoch:2/10, Iter:6/188, Loss:0.4499, Accuracy:75.7505, lr:0.0001000000
+[2022-10-29 14:16:27,905][train.py][line:129][INFO] Epoch:2/10, Iter:8/188, Loss:0.4466, Accuracy:75.8379, lr:0.0001000000
+[2022-10-29 14:16:43,667][train.py][line:129][INFO] Epoch:2/10, Iter:10/188, Loss:0.4440, Accuracy:75.9248, lr:0.0001000000
+[2022-10-29 14:16:58,113][train.py][line:129][INFO] Epoch:2/10, Iter:12/188, Loss:0.4422, Accuracy:76.0107, lr:0.0001000000
+[2022-10-29 14:17:13,554][train.py][line:129][INFO] Epoch:2/10, Iter:14/188, Loss:0.4402, Accuracy:76.0957, lr:0.0001000000
+[2022-10-29 14:17:29,543][train.py][line:129][INFO] Epoch:2/10, Iter:16/188, Loss:0.4370, Accuracy:76.1799, lr:0.0001000000
+[2022-10-29 14:17:46,500][train.py][line:129][INFO] Epoch:2/10, Iter:18/188, Loss:0.4343, Accuracy:76.2639, lr:0.0001000000
+[2022-10-29 14:18:03,702][train.py][line:129][INFO] Epoch:2/10, Iter:20/188, Loss:0.4315, Accuracy:76.3477, lr:0.0001000000
+[2022-10-29 14:18:19,734][train.py][line:129][INFO] Epoch:2/10, Iter:22/188, Loss:0.4280, Accuracy:76.4310, lr:0.0001000000
+[2022-10-29 14:18:34,525][train.py][line:129][INFO] Epoch:2/10, Iter:24/188, Loss:0.4274, Accuracy:76.5129, lr:0.0001000000
+[2022-10-29 14:18:50,745][train.py][line:129][INFO] Epoch:2/10, Iter:26/188, Loss:0.4262, Accuracy:76.5943, lr:0.0001000000
+[2022-10-29 14:19:06,562][train.py][line:129][INFO] Epoch:2/10, Iter:28/188, Loss:0.4240, Accuracy:76.6747, lr:0.0001000000
+[2022-10-29 14:19:22,567][train.py][line:129][INFO] Epoch:2/10, Iter:30/188, Loss:0.4228, Accuracy:76.7539, lr:0.0001000000

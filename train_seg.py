@@ -11,19 +11,19 @@ from torch import nn
 import torch.backends.cudnn as cudnn
 from torch.optim import lr_scheduler
 
-from model.model import ModelNet
-from dataset.CustomDataset import CustomDataset
+from model.unet import UNet
+from dataset.segDataset import SegDataset
 from utils.log import get_logger
 from utils.averageMeter import AverageMeter
 
-# 1.6w训练集，训练30个epoch，bath_size为16*4=64，lr=0.001
-# 3000训练集，训练10个eopch，bath_size为16，lr为0.001
 
 ############################ PARAMS ################################################################
 parser = argparse.ArgumentParser(description='params')
 parser.add_argument('--epoch', type=int, default=10, help='Number of epochs to train.')
-parser.add_argument('--train_data_path', type=str, default="D:/code/pytorch_template/data/train.txt", help='')
-parser.add_argument('--test_data_path',  type=str, default="D:/code/pytorch_template/data/test.txt", help='')
+parser.add_argument('--train_rgb_path', type=str, default="D:/code/pytorch_template/data/cls_txt/train.txt", help='')
+parser.add_argument('--train_msk_path', type=str, default="D:/code/pytorch_template/data/cls_txt/train.txt", help='')
+parser.add_argument('--test_rgb_path',  type=str, default="D:/code/pytorch_template/data/cls_txt/test.txt", help='')
+parser.add_argument('--test_msk_path',  type=str, default="D:/code/pytorch_template/data/cls_txt/test.txt", help='')
 parser.add_argument('--width',  type=int, default="256", help='the width of image')
 parser.add_argument('--height', type=int, default="256", help='the height of image')
 parser.add_argument('--batch_size', type=int, default="16", help='the batch size of per train data')
@@ -64,14 +64,15 @@ device_ids = range(torch.cuda.device_count())
 transforms = A.Compose([ #todo random 
                 A.HorizontalFlip(p=0.5), # 水平翻转
                 A.RandomBrightnessContrast(p=0.5), # 随机选择图片的对比度和亮度
+                A.Resize(args.height, args.height)
             ])
-train_dataset = CustomDataset(txt_path=args.train_data_path, width=args.width, height=args.height, transform=transforms)
-test_dataset  = CustomDataset(txt_path=args.test_data_path,  width=args.width, height=args.height, transform=transforms)
+train_dataset = SegDataset(txt_path=args.train_data_path, transform=transforms)
+test_dataset  = SegDataset(txt_path=args.test_data_path,  transform=transforms)
 train_loader = DataLoader(dataset=train_dataset, batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers)
 test_loader  = DataLoader(dataset=test_dataset,  batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers)
-criterion = nn.CrossEntropyLoss()
-model = ModelNet(args.num_classes)
-optimizer = torch.optim.Adam(model.parameters(), lr=args.init_lr)
+criterion = nn.BCEWithLogitsLoss()
+model = UNet(n_channels=1, n_classes=1)
+optimizer = torch.optim.RMSprop(model.parameters(), lr=args.init_lr, weight_decay=1e-8, momentum=0.9)
 scheduler = lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.1)
 
 ############################ RESUME ###############################################################
@@ -108,9 +109,9 @@ logger.info('start training!')
 
 for epoch in range(start_epoch, args.epoch+1): #epoch 从1开始 loss不一致
     model.train()
-    for i, (images, labels) in enumerate(train_loader):
+    for i, (imgs, msks) in enumerate(train_loader):
         if use_cuda:
-            data,labels = images.cuda(), labels.cuda()
+            imgs, msks = imgs.cuda(), msks.cuda()
         #清零
         outputs = model(images) # shape: batch_size x num_classes
         # print("labels:", labels)
@@ -122,9 +123,10 @@ for epoch in range(start_epoch, args.epoch+1): #epoch 从1开始 loss不一致
 
         _, predicted = torch.max(outputs.cpu().data, 1)
         losses.update(loss.cpu().data.item())
-        total += labels.size(0)
-        correct += (predicted == labels).sum()
-        accuracy.update(100 * correct / total)
+
+        # total += labels.size(0)
+        # correct += (predicted == labels).sum()
+        # accuracy.update(100 * correct / total)
         # todo accu loss都是一個batch_size的
         if (i+1) % 2 == 0:
             logger.info('Epoch:%d/%d, Iter:%d/%d, Loss:%.4f, Accuracy:%.4f, lr:%.10f'% \
@@ -143,9 +145,7 @@ for epoch in range(start_epoch, args.epoch+1): #epoch 从1开始 loss不一致
             outputs = model(images)
             _, predicted = torch.max(outputs.cpu().data, 1)
             loss = criterion(outputs, labels)
-            # total += labels.size(0)
             correct = (predicted == labels).sum()
-            # accuracy.update(100 * correct / labels.size(0))
             acc = 100 * correct / labels.size(0)
             if (i+1) % 2 == 0:
                 logger.info('Epoch:%d/%d, Iter:%d/%d, Loss:%.4f, Accuracy:%.4f'% \

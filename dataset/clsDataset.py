@@ -4,7 +4,7 @@ import cv2
 import pdb
 from PIL import Image
 
-class CustomDataset(Dataset):
+class ClsDataset(Dataset):
 
     def __init__(self, txt_path, width, height, transform=None):
         fp = open(txt_path, "r")
@@ -41,7 +41,7 @@ class CustomDataset(Dataset):
 
 if __name__ == '__main__':
     txt_path = "D:/code/pytorch_template/data/train.txt"
-    dataset = CustomDataset(txt_path, 256, 256, None)
+    dataset = ClsDataset(txt_path, 256, 256, None)
     img, label = dataset.__getitem__(0)
     print("img:", img.shape) # img: torch.Size([3, 256, 256])  范围：-1~1
     print("label:", label) # label: 0 范围：0~4
