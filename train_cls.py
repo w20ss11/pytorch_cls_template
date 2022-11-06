@@ -61,12 +61,12 @@ if torch.cuda.is_available():
 device_ids = range(torch.cuda.device_count())
 
 ############################ MODEL ################################################################
-transforms = A.Compose([ #todo random 
+tf = A.Compose([ #todo random 
                 A.HorizontalFlip(p=0.5), # 水平翻转
                 A.RandomBrightnessContrast(p=0.5), # 随机选择图片的对比度和亮度
             ])
-train_dataset = ClsDataset(txt_path=args.train_data_path, width=args.width, height=args.height, transform=transforms)
-test_dataset  = ClsDataset(txt_path=args.test_data_path,  width=args.width, height=args.height, transform=transforms)
+train_dataset = ClsDataset(txt_path=args.train_data_path, width=args.width, height=args.height, transform=tf)
+test_dataset  = ClsDataset(txt_path=args.test_data_path,  width=args.width, height=args.height, transform=tf)
 train_loader = DataLoader(dataset=train_dataset, batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers)
 test_loader  = DataLoader(dataset=test_dataset,  batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers)
 criterion = nn.CrossEntropyLoss()

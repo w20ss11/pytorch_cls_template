@@ -40,7 +40,7 @@ class ClsDataset(Dataset):
 
 
 if __name__ == '__main__':
-    txt_path = "D:/code/pytorch_template/data/train.txt"
+    txt_path = "D:/code/pytorch_template/data/cls_txt/train.txt"
     dataset = ClsDataset(txt_path, 256, 256, None)
     img, label = dataset.__getitem__(0)
     print("img:", img.shape) # img: torch.Size([3, 256, 256])  范围：-1~1
