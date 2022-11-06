@@ -147,10 +147,9 @@ for epoch in range(start_epoch, args.epoch+1): #epoch 从1开始 loss不一致
             model_path = os.path.join(args.save_path, "segm_odel_epoch_{}.pth".format(epoch))
             state = {'model': model.state_dict(), 'oiptmizer': optimizer.state_dict(), 'epoch': epoch}
             torch.save(state, model_path)
-        break
     scheduler.step()
 
-    
+
     model.eval()
     resore_transform = transforms.Compose([DeNormalize([.5, .5, .5], [.5, .5, .5])])
     if epoch % args.test_freq == 0:
