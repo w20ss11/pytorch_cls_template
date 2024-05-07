@@ -14,7 +14,7 @@ from torch.optim import lr_scheduler
 from model.resnet18 import ModelNet
 from dataset.clsDataset import ClsDataset
 from utils.log import get_logger
-from utils.averageMeter import AverageMeter
+from utils.AverageMeter import AverageMeter
 
 # 1.6w训练集，训练30个epoch，bath_size为16*4=64，lr=0.001
 # 3000训练集，训练10个eopch，bath_size为16，lr为0.001
@@ -110,7 +110,7 @@ for epoch in range(start_epoch, args.epoch+1): #epoch 从1开始 loss不一致
     model.train()
     for i, (images, labels) in enumerate(train_loader):
         if use_cuda:
-            data,labels = images.cuda(), labels.cuda()
+            images,labels = images.cuda(), labels.cuda()
         #清零
         outputs = model(images) # shape: batch_size x num_classes
         # print("labels:", labels)
@@ -123,7 +123,7 @@ for epoch in range(start_epoch, args.epoch+1): #epoch 从1开始 loss不一致
         _, predicted = torch.max(outputs.cpu().data, 1)
         losses.update(loss.cpu().data.item())
         total += labels.size(0)
-        correct += (predicted == labels).sum()
+        correct += (predicted == labels.cpu().data).sum()
         accuracy.update(100 * correct / total)
         # todo accu loss都是一個batch_size的
         if (i+1) % 2 == 0:

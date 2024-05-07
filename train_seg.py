@@ -14,9 +14,9 @@ from torchvision import transforms
 from PIL import Image
 
 from model.unet import UNet
-from dataset.segDataset import SegDataset
+from dataset.SegDataset import SegDataset
 from utils.log import get_logger
-from utils.averageMeter import AverageMeter
+from utils.AverageMeter import AverageMeter
 from utils.metric import confusion_matrix, evaluate
 from utils.common import DeNormalize
 
